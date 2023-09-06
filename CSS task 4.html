@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+        /* CSS styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container for the content with border frame */
+        .content-container {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #333;
+            text-align: left;
+        }
+
+        /* Title styles */
+        .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Paragraph styles */
+        p {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        /* Color squares container */
+        .color-squares {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Color square styles */
+        .color-square {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Color styles */
+        .green {
+            background-color: #29e98f ;
+        }
+
+        .blue {
+            background-color: #337ab7;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        /* Hover effect for color squares */
+        .color-square:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Content container with border frame -->
+    <div class="content-container">
+        <!-- Title aligned to the left -->
+        <div class="title">Hoverable Sidenav Buttons</div>
+        
+        <!-- Paragraph aligned to the left below the title -->
+        <p>Hover over the color squares in the left side navigation to open them</p>
+
+        <!-- Color squares container -->
+        <div class="color-squares">
+            <div class="color-square green"></div>
+            <div class="color-square blue"></div>
+            <div class="color-square red"></div>
+            <div class="color-square black"></div>
+        </div>
+    </div>
+</body>
+</html>

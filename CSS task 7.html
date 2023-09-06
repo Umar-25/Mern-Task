@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-7</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #abc660;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 400px; /* Adjust the form width */
+        }
+
+        .input-container {
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .radio-label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .declare {
+            font-size: 14px;
+        }
+
+        .register {
+            text-align: center;
+        }
+
+        /* Styling for background colors */
+        .input-container:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        .gender-container {
+            background-color: #f5f5f5;
+            padding: 10px;
+        }
+
+        /* Styling for select and checkbox inputs */
+        select, input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        /* Styling for the Register button */
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input class="input-box" type="text"></td>
+            </tr>
+            <tr>
+                <td class="label">Last Name:</td>
+                <td><input class="input-box" type="text"></td>
+            </tr>
+            <tr>
+                <td class="label">Email:</td>
+                <td><input class="input-box" type="text"></td>
+            </tr>
+            <tr>
+                <td class="label">Password:</td>
+                <td><input class="input-box" type="text"></td>
+            </tr>
+            <tr>
+                <td class="label">Re-enter Password:</td>
+                <td><input class="input-box" type="text"></td>
+            </tr>
+            <tr>
+                <td class="label">Gender:</td>
+                <td class="gender-container">
+                    <label class="radio-label">
+                        <input class="radio" type="radio" name="gender"> Male
+                    </label>
+                    <label class="radio-label">
+                        <input class="radio" type="radio" name="gender"> Female
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Age:</td>
+                <td><input class="input-box" type="text"></td>
+            </tr>
+            <tr>
+                <td class="label">Phone Number:</td>
+                <td><input class="input-box" type="text"></td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="address">Address:</label>
+                </td>
+                <td>
+                    <textarea name="address" class="input-box" id="address" cols="10" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">State:</td>
+                <td><input class="input-box" type="text"></td>
+            </tr>
+            <tr>
+                <td class="label">Country:</td>
+                <td>
+                    <select name="country" id="country">
+                        <option value="America">Austria</option>
+                        <option value="Australia">Australia</option>
+                        <option value="India">India</option>
+                        <option value="Canada">Canada</option>
+                        <option value="France">France</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Brazil">Brazil</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Language:</td>
+                <td>
+                    <div class="language-dropdown">
+                        <select name="lang" class="input-box" onchange="this.style.width = (this.selectedIndex > 0) ? 'auto' : '100%';">
+                            <option value="">Select a language</option>
+                            <option value="English">English</option>
+                            <option value="Tamil">Tamil</option>
+                            <option value="Telugu">Telugu</option>
+                            <option value="Marathi">Marathi</option>
+                            <option value="Malayalam">Malayalam</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <label class="radio-label">
+                        <input class="radio" type="radio"> I hereby declare that all the given details are true
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <p class="declare">
+                        Log in to <a href="https://ethnus.com/" target="_blank">Ethnus</a> Website
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div class="register">
+            <button>Register</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-6</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+            background-image: url('https://avatoon.me/wp-content/uploads/2021/09/Cartoon-Pic-Ideas-for-DP-Profile-10.png'); /* Replace with your image link */
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            text-align: left; /* Align text to the left */
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .remember-me {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .cancel-button {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px; /* Increase the top margin for the gap */
+        }
+
+        .forgot-password {
+            text-decoration: none;
+            color: #3498db;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="avatar"></div>
+        <div class="input-container">
+            <label class="label" for="username">Username</label>
+            <input type="text" id="username" class="input-box" placeholder="Enter your username">
+        </div>
+        <div class="input-container">
+            <label class="label" for="password">Password</label>
+            <input type="password" id="password" class="input-box" placeholder="Enter your password">
+        </div>
+        <button class="login-button">Login</button>
+        <label class="remember-me"><input type="checkbox"> Remember me</label>
+        <br> <!-- Add a line break for spacing -->
+        <a href="#" class="cancel-button">Cancel</a>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+    </div>
+</body>
+</html>
